@@ -10,10 +10,9 @@ const itemSchema = new Schema({
   newPrice: {type: Number},
   unit: {type: String, required: true},
   image: {
-    type: Buffer,
-    contentType: String
+    id: {type: String},
+    url: {type: String}
   },
-  mimeType: {type: String},
   optionsList: [
     {
       id: {type: String},

@@ -22,6 +22,8 @@ Front-end: [Link](https://github.com/pedrorfigueiredo/so-carnes-silva-front-end)
 npm install
 ```
 
+You'll need to configure your environment variables for MongoDB database, JWT and Cloudinary file server.
+
 ## Running
 
 ```sh

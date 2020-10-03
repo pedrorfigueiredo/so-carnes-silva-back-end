@@ -1,4 +1,5 @@
 const express = require("express");
+const morgan = require("morgan");
 const routes = require("./src/routes");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -6,6 +7,7 @@ const HttpError = require("./src/models/http-error");
 
 const app = express();
 
+app.use(morgan("tiny"));
 app.use(cors());
 app.use(express.json());
 app.use(routes);
